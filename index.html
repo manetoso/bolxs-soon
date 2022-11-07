@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOLXS</title>
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+            fontFamily: {
+              //   sans: ['Roboto', 'sans-serif'],
+              sans: ['Bebas Neue', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main
+      class="min-w-screen min-h-screen flex items-center justify-center relative">
+      <img
+        id="seats"
+        src="./images/seats.png"
+        alt="seats"
+        class="w-screen min-h-screen object-center object-cover fixed z-10 pointer-events-none" />
+      <img
+        id="leftX"
+        src="./images/x-left.png"
+        alt="x-left"
+        class="z-30 mt-[22px] absolute mr-[6rem]" />
+      <img
+        id="rightX"
+        src="./images/x-right.png"
+        alt="x-left"
+        class="z-20 absolute ml-[8rem]" />
+      <img
+        id="logo"
+        src="./images/logo-name.png"
+        alt="bolx-logo"
+        class="absolute mb-[40rem]" />
+      <!-- <div
+        class="z-40 fixed left-0 top-0 min-h-screen min-w-[100vw] bg-[rgba(0,0,0,0.5)]"></div> -->
+      <img
+        id="light1"
+        src="./images/light.svg"
+        alt="light"
+        class="z-50 fixed bottom-[-10rem] right-[25%] min-h-[200vh]" />
+      <img
+        id="light2"
+        src="./images/light.svg"
+        alt="light"
+        class="z-50 fixed bottom-[-10rem] left-[25%] min-h-[200vh]" />
+      <h1 id="text" class="absolute mt-[40rem] text-white font-bold text-4xl">
+        Próximamente
+      </h1>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
